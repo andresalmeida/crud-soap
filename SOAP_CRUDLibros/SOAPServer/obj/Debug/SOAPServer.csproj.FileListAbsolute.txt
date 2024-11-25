@@ -1,0 +1,14 @@
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.dll.config
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.dll
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.pdb
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.csproj.AssemblyReference.cache
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.csproj.CoreCompileInputs.cache
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.dll
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.pdb
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.dll.config
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.dll
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\bin\SOAPServer.pdb
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.csproj.AssemblyReference.cache
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.csproj.CoreCompileInputs.cache
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.dll
+C:\Users\rodri\Downloads\SOAP_CRUDLibros\SOAP_CRUDLibros\SOAPServer\obj\Debug\SOAPServer.pdb

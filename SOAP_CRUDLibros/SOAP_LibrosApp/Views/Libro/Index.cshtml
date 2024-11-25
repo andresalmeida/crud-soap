@@ -1,0 +1,82 @@
+﻿@model List<SOAP_LibrosApp.Models.Libro>
+
+<div class="main-container">
+    <!-- Contenedor de la Tabla -->
+    <div class="table-container">
+        <h2 class="text-center mb-4">Gestión de Libros</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Año de Publicación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Count > 0)
+                {
+                    foreach (var libro in Model)
+                    {
+                        <tr>
+                            <td>@libro.Id</td>
+                            <td>@libro.Titulo</td>
+                            <td>@libro.Autor</td>
+                            <td>@libro.AñoPublicacion</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <a asp-action="Editar" asp-route-id="@libro.Id" class="btn btn-warning">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                    <a asp-action="Eliminar" asp-route-id="@libro.Id" class="btn btn-danger">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">No hay libros disponibles</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Botón Crear Nuevo -->
+        <a href="@Url.Action("Crear", "Libro")" class="create-button">Crear Nuevo Libro</a>
+    </div>
+
+    <!-- Contenedor de la Simulación de Libros -->
+    <div class="book-simulation">
+        <!-- Buscador -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar libro por título..." />
+            <button>Buscar</button>
+        </div>
+
+        <!-- Simulación de libros -->
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var libro in Model.Take(3))
+            {
+                <div class="book">
+                    <div class="book-title">@libro.Titulo</div>
+                    <div class="book-author">Autor: @libro.Autor</div>
+                    <div>Año de Publicación: @libro.AñoPublicacion</div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="book">
+                <div class="book-title">Ejemplo de Libro</div>
+                <div class="book-author">Autor: Autor de Ejemplo</div>
+                <div>Año de Publicación: 2024</div>
+            </div>
+        }
+    </div>
+</div>

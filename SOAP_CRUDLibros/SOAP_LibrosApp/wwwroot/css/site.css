@@ -1,0 +1,474 @@
+/* Global Styles */
+body {
+    background: url('/images/background.jpg') no-repeat center center fixed; /* Fondo */
+    background-size: cover; /* Imagen ajustada a pantalla */
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2d4739;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #28a745, #218838); /* Degradado verde */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre título y menú */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+    header .navbar-brand {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    header .nav {
+        display: flex;
+        gap: 30px; /* Espaciado entre enlaces */
+    }
+
+    header .nav-link {
+        color: #ffffff;
+        text-decoration: none; /* Sin subrayado */
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+        header .nav-link:hover {
+            color: #f8f9fa;
+            text-decoration: underline; /* Subrayado al pasar el cursor */
+        }
+
+/* Footer */
+footer {
+    background-color: #2d4739; /* Verde oscuro */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    footer a {
+        color: #a8d5ba; /* Verde claro */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Tabla a la izquierda, simulación de libros a la derecha */
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Tabla */
+.table-container {
+    flex: 2; /* Ocupa más espacio */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centrado */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #ffffff; /* Fondo blanco */
+}
+
+    .table th {
+        background: #28a745;
+        color: #ffffff;
+        padding: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+        border-bottom: 2px solid #218838; /* Borde */
+    }
+
+    .table td {
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f9fcf9;
+    }
+
+    .table tr:hover {
+        background-color: #e8f5e8;
+        transform: scale(1.01);
+        transition: all 0.3s ease;
+    }
+
+/* Botones de Acción */
+.action-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        transform: scale(1.1);
+    }
+
+.btn-danger {
+    background-color: #e84118;
+}
+
+    .btn-danger:hover {
+        background-color: #c23616;
+        transform: scale(1.1);
+    }
+
+/* Formularios */
+.form-container {
+    width: 40%;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .form-container h2 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #28a745;
+    }
+
+    .form-container label {
+        display: block;
+        text-align: left;
+        margin: 10px 0 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #2d4739;
+    }
+
+    .form-container input, .form-container select, .form-container button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+        .form-container input:focus, .form-container select:focus, .form-container button:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+    .form-container button {
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .form-container button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+/* Simulación de Libros */
+.book-simulation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 1rem;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.book-author {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+/* Buscador */
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .search-bar input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .search-bar button {
+        padding: 10px 15px;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        .search-bar button:hover {
+            background: #218838;
+        }
+
+
+/* Global Styles */
+body {
+    background: url('/images/background.jpg') no-repeat center center fixed; /* Fondo */
+    background-size: cover;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2d4739;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #28a745, #218838);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+    header .navbar-brand {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    header .nav-link {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+        header .nav-link:hover {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+
+/* Footer */
+footer {
+    background-color: #2d4739;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    footer a {
+        color: #a8d5ba;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Tabla */
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    .table th {
+        background: #28a745;
+        color: #ffffff;
+        padding: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .table td {
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f9fcf9;
+    }
+
+    .table tr:hover {
+        background-color: #e8f5e8;
+        transform: scale(1.01);
+        transition: all 0.3s ease;
+    }
+
+/* Botón Crear Nuevo Libro */
+.create-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #28a745;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .create-button:hover {
+        background: #218838;
+        transform: scale(1.05);
+    }
+
+/* Botones de Acción */
+.action-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        transform: scale(1.1);
+    }
+
+.btn-danger {
+    background-color: #e84118;
+}
+
+    .btn-danger:hover {
+        background-color: #c23616;
+        transform: scale(1.1);
+    }
+
+/* Formularios */
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .form-container h2 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #28a745;
+    }
+
+    .form-container label {
+        display: block;
+        text-align: left;
+        margin: 10px 0 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #2d4739;
+    }
+
+    .form-container input, .form-container button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+        .form-container input:focus, .form-container button:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+    .form-container button {
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .form-container button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }

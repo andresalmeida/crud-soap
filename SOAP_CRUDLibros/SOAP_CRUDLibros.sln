@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAPServer", "SOAPServer\SOAPServer.csproj", "{34A1A378-9368-45C0-935C-285301E8BBAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAPCliente", "SOAPCliente\SOAPCliente.csproj", "{BE5AA800-6EF5-4B72-9E9A-5EA0B7187BAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34A1A378-9368-45C0-935C-285301E8BBAC} = {34A1A378-9368-45C0-935C-285301E8BBAC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP_LibrosApp", "SOAP_LibrosApp\SOAP_LibrosApp.csproj", "{3976C05A-2604-4F63-BD31-A1E3D101AA1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34A1A378-9368-45C0-935C-285301E8BBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A1A378-9368-45C0-935C-285301E8BBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A1A378-9368-45C0-935C-285301E8BBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A1A378-9368-45C0-935C-285301E8BBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5AA800-6EF5-4B72-9E9A-5EA0B7187BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5AA800-6EF5-4B72-9E9A-5EA0B7187BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5AA800-6EF5-4B72-9E9A-5EA0B7187BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5AA800-6EF5-4B72-9E9A-5EA0B7187BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3976C05A-2604-4F63-BD31-A1E3D101AA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3976C05A-2604-4F63-BD31-A1E3D101AA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3976C05A-2604-4F63-BD31-A1E3D101AA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3976C05A-2604-4F63-BD31-A1E3D101AA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7A2F0A0-81DD-432C-AEB1-17D44976BA42}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\bin\Debug\SOAPCliente.exe.config
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\bin\Debug\SOAPCliente.exe
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\bin\Debug\SOAPCliente.pdb
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\obj\Debug\SOAPCliente.csproj.AssemblyReference.cache
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\obj\Debug\SOAPCliente.csproj.CoreCompileInputs.cache
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\obj\Debug\SOAPCliente.exe
+C:\Users\comby\source\repos\SOAP_CRUDLibros\SOAPCliente\obj\Debug\SOAPCliente.pdb
